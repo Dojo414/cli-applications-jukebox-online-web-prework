@@ -55,6 +55,7 @@ def run
     elsif input === "help"
       help
   end
+end
   exit_jukebox
 end
 
