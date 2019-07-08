@@ -29,9 +29,7 @@ end
 def play(songs)
   puts "Please enter a song name or number:"
   song_choice = gets
-  if songs.include?(song_choice.to_s)
-    puts "Playing #{song_choice}"
-  elsif [1..9].include?(song_choice.to_i)
+  if [1..9].include?(song_choice.to_i)
     puts "Playing #{songs[song_choice - 1]}"
   else 
     puts "Invalid input, please try again"
